@@ -141,3 +141,13 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 \l
 __vsc_prompt_cmd_original
 psql --username=freecodecamp --dbname=postgres
+[ -d "$HOME/bin" ]
+[ -d "$HOME/.local/bin" ]
+PATH="$HOME/.local/bin:$PATH"
+[ -e /home/gitpod/.nix-profile/etc/profile.d/nix.sh ]
+. /home/gitpod/.nix-profile/etc/profile.d/nix.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]]
+source "$HOME/.rvm/scripts/rvm"
+[[ -n $SSH_CONNECTION ]]
+cd "/workspace/project"
+'/home/gitpod/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/node' -p '"a9e9d9a40f20" + JSON.stringify(process.env) + "a9e9d9a40f20"'
