@@ -151,3 +151,4 @@ source "$HOME/.rvm/scripts/rvm"
 [[ -n $SSH_CONNECTION ]]
 cd "/workspace/project"
 '/home/gitpod/.vscode-server/bin/863d2581ecda6849923a2118d93a088b0745d9d6/node' -p '"a9e9d9a40f20" + JSON.stringify(process.env) + "a9e9d9a40f20"'
+psql --username=freecodecamp --dbname=postgres
